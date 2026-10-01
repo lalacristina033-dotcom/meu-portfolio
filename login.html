@@ -1,0 +1,31 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login Administrativo | Lavinia</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="admin-login">
+    <h1>Painel administrativo</h1>
+    <p>Entre para gerenciar seus projetos.</p>
+
+    <form id="loginForm">
+      <label for="email">E-mail</label>
+      <input id="email" type="email" required autocomplete="username">
+
+      <label for="senha">Senha</label>
+      <input id="senha" type="password" required autocomplete="current-password">
+
+      <button type="submit">Entrar</button>
+      <p id="loginMessage" role="status"></p>
+    </form>
+  </main>
+
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+  <script src="supabase-config.js"></script>
+  <script src="login.js"></script>
+</body>
+</html>
